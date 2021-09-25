@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./styles.css">
+
+        <!--google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+        <!--font awesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" 
+        crossorigin="anonymous">
+
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" 
+        crossorigin="anonymous">
+
+        <title>Portfolio</title>
+    </head>
+
+
+    <body>
+        <main class="container-{960}">
+            <nav class="menuItems">
+                <img src="./Logos/logo.png"  class="logo-image" alt="logo">
+                <div class="menuIcon" id="menuiconid"  onclick= "handleClick()">
+                    <p id = "menuitagid"><i class="fas fa-bars"></i></p>
+                </div>
+                <ul class="nav-menu" id = "nav-bar-id" >
+                    <li class="list">
+                        <a href="#home_id" class="nav-links">About</a>
+                        <a href="#my_work_id" class="nav-links">Work</a>
+                        <a href="#contac_id" class="nav-links">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div id = "home_id" class="about_container">
+                <div class="about_text_container">
+                    <h4 class="about_text">Software engineer with degree of bachelor of 
+                        technology specialised in computer science and engineering. Thwalib is an 
+                    intern in development at Qburst technologies started his career 
+                in August 2021. </h4>
+                <i class="fas fa-chevron-right"></i>
+                </div>
+                <img class="about_image" src="./Images/thwalib-image.jpg" alt="Photo of Thwalib">
+                <p class="portfolio">portfolio</p>
+            </div>
+            <div class="think">
+                <p class="think_text">Think</p>
+                <p class="out_of">outside the box.</p>
+                <p class="think_para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+                <a href="" id = "my_work_id" class="learn_more">LEARN MORE</a>
+            </div>
+            <div class="my_works">
+                <p class="my_work_heading">My Works</p>
+
+                <div class="work_cards_container">
+                    <div class="work_cards">
+                        <img class="work_image" src="./Images/Milmas.png" alt="">
+                        <div class="text_container">
+                            <p class="work_image_heading" >Milmas Catering</p>
+                            <p class="work_image_description" >Responsive website with their displays</p>
+                        </div>
+                    </div>
+                    <div class="work_cards">
+                        <img class="work_image" src="./Images/Accelerate.png" alt="">
+                        <div class="text_container">
+                            <p class="work_image_heading" >Accelerate</p>
+                            <p class="work_image_description" >Sample page with some front end and backend</p>
+                        </div>
+                    </div>
+                    <div class="work_cards">
+                        <img class="work_image" src="./Images/smart.png" alt="">
+                        <div class="text_container">
+                            <p class="work_image_heading" >Smart Parking</p>
+                            <p class="work_image_description" >smart car parking system with Deep Learning</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id = "contac_id" class="learn_more_2_div" ><a href="" class="learn_more_2">LEARN MORE</a></div>
+            </div>
+            <div class="contact_container">
+                <div class="forms">
+                    <div class="forms_sub">
+                        <form class="form_container" action="">
+                            <input class="form_input" type="text" placeholder="Enter your name">
+                            <input class="form_input" type="email" placeholder="Enter your name" required>
+                            <textarea class="form_input_area" name="text_area" id="text_area_id" cols="30" rows="5"></textarea>
+                            <input class="btn_submit" type="submit" value="SUBMIT" >
+                        </form>
+                    </div>
+                </div>
+                <div class="contact_sub">
+                    <div class="contact_heading_container">
+                        <h1 class="contact_text">CONTACT US</h1>
+                        <div class="logos">
+                            <a href="https://en-gb.facebook.com/" ><img  class="facebook" src="./Logos/fb-outline.svg" alt=""></a>
+                            <a href="" ><img class="twitter" src="./Logos/tw.svg" alt=""></a>
+                            <a href="" ><img class="vimeo" src="./Logos/vimeo.svg" alt=""></a>
+                            <a href="" ><img class="instagram" src="./Logos/insta.svg" alt=""></a>
+                        </div>
+                        <div>
+                            <p class="phone_numbers">1 (234) 567-891</p>
+                            <p class="phone_numbers">1 (234) 987-654</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sample_text">
+                <p  ondblclick="this.contentEditable=true;this.className='inEdit';" onblur="this.contentEditable=false;this.className='second_part';" contenteditable="false" class="second_part">Sample text. Click to
+                    select the
+                    text box. Click again or double
+                    click to start editing the text.
+                </p>
+            </div>
+            <footer>
+                <p class="project">project by <a class="thwalib">Thwalib Nazir</a></p>
+            </footer>
+
+        </main>
+
+        <script>
+            var clicked = false;
+            //var cName = document.getElementById()
+            function handleClick(clicked){
+                
+                this.clicked = !this.clicked;
+                //console.log( this.clicked);
+
+                var navigation = document.getElementById('nav-bar-id');
+
+                if (this.clicked == false){
+                    document.getElementById("menuitagid").innerHTML = '<i class="fas fa-bars"></i>';
+                    navigation.className = 'nav-menu'
+                }
+                else{
+                    document.getElementById("menuitagid").innerHTML = '<i class="fas fa-times"></i>';
+                    navigation.className = 'nav-menu active';
+                }
+            }
+        </script>
+    </body>
+
+</html>
